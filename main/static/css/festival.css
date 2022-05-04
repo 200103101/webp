@@ -1,0 +1,11 @@
+.main {
+  float: left;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+
+img{float: left; width: 10%; height: 12%;padding-right:2%}
+ol{ color: hsla(199, 87%, 51%, 0.945); 
+  
+  margin-left: 20px;}

@@ -1,0 +1,46 @@
+{% extends "main/base.html" %}
+{% block title %}
+ {{ title }} 
+{% endblock %}
+{% block topic %}
+ 
+{% endblock %}
+{% block boutn %}
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="/carla" class="nav-link">Generalize</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">Food</a></li>
+                <li class="nav-item"><a href="/last" class="nav-link">Sport</a></li>
+                <li class="nav-item"><a href="/festival" class="nav-link">festival</a></li>
+                <li class="nav-item"><a href="/Art" class="nav-link">Art</a></li>
+                <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">opinion</a></li>
+                <li class="nav-item"><a href="/add_emp" class="nav-link">ending</a></li>
+                <li class="nav-item"><a href="/upload" class="nav-link">Registered</a></li>
+                
+              </ul>
+{% endblock %}
+{% block mac %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+        <h1 style="text-align: center; color: #00a2ff;" >Welcometo Kazahstan</h1>
+        Жүректегі жеткізетін жырымды,<br>
+        Тілім - қазақ, ұшқын атқан жалыны.<br>
+        Ақтаратын өлеңім мен сырымды,<br>
+       Тілім - қазақ, түркілердің сарыны.</p>
+       
+      </div>
+    </div>
+  </section>
+ 
+{% endblock %}
+ 
+{%block hr %} 
+
+{% endblock %}
+{% block file %}
+{% endblock %}

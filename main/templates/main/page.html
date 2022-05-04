@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Books App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+{% block content %}
+<div style="margin-left: 30%;margin-top: 100px;">
+<h3 style="margin-bottom: 20px;" >
+    List of registered users</h3>
+
+    <div class="right__content">
+
+    <table class="table-sm" border="1">
+        <thead>
+        <tr class="asd">
+            <th>Id</th>
+            <th>name</th> 
+            <th>Last name</th>
+            
+           
+    
+        </tr></thead>
+    {% for book in shelf %}
+    <tbody>
+        <tr class="asd">
+       <th>{{ book.name }}</th> 
+        <th>{{ book.Address }}</th>
+        <th>{{book.email}}</th>
+    
+    
+    
+        </tr></tbody>
+    </div>
+  </div>
+</div>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% extends "main/base.html" %}
+{% block title %} Kazah Art {% endblock %}
+
+
+{% block boutn %}
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/home" class="nav-link " >Home</a></li>
+                <li class="nav-item"><a href="/carla" class="nav-link">Generalize</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">Food</a></li>
+                <li class="nav-item"><a href="/last" class="nav-link ">Sport</a></li>
+                <li class="nav-item"><a href="/festival" class="nav-link">festival</a></li>
+                <li class="nav-item"><a href="/Art" class="nav-link active"  aria-current="page">Art</a></li>
+                <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">opinion</a></li>
+                <li class="nav-item"><a href="/end" class="nav-link">ending</a></li>
+              </ul>
+{%endblock%}
+
+{% block topic %}
+<h1 style="text-align: center; color: #00a2ff;" >
+   Kazah Art</h1>
+{% endblock %}
+{% block mac %}
+<link type="text/css" rel="stylesheet" href="/static/css/art.css">
+<div class="main">
+  <p>Since ancient times, kazakh crafts have been related to cattle and sheep: wool manufacturing, weaving, bone art and cattle leather, sheep processing. Of course, they are made of wood and metal, which are necessary for the nomadic people in their daily life, and even if they are not daily objects, other objects are used as decoration for the Kazakh yurt, the national costume, etc.</p>
+  <p> <img src="/static/images/ui.jpeg" ;> <br>The most diverse and desirable products in Kazakhstan are those made of felt. Although it is a very common craft throughout the world, most artisans generally use the modern felt-making method of wool. And in Kazakhstan there is a revival of the "nomadic method" (the traditional way of producing felt: by hand, without artificial dyes). After all, it's the only way to make thick, impervious felt for a Kazakh yurt. In several regions of the country, craftsmen use the ancient technique of felting to make various products, inlaid with Kazakh ornaments.
+
+   Make many useful and beautiful things out of felt that can be purchased for yourself or given as gifts to loved ones. They can be souvenirs of felt toys, warm slippers, vests, scarves, etc.</p>
+  <P><img src="/static/images/ahash.jpeg" ><br>Kazakh jewelry is also extremely fine. The kazakh jeweler's ornaments would not make even the most discerning traveler laugh! The decorations in Kazakhstan are made from ancient times. Historians and archaeologists talk in many scientific journals and academic forums about bronze, gold and silver products found at different times in all regions of Kazakhstan. Silver jewelry is the most popular among women because it is the most valuable part of a Kazakh bride's dowry. Necklaces, bracelets and pendants serve not only as ornaments, but also as talismans for successful hunting and fighting.</P>
+  <p>Even today, modern Kazakh jewelers delight high jewelry connoisseurs by making classic pieces in silver and gold, such as exquisite brooches, bracelets and pendant earrings. But there are also domestic art deco weapons, with artisans making traditional Kazakh knives for hunting and daily life. So kazakh traditional silver jewelry is still worth the effort.</p> 
+<img src="/static/images/kigyz.jpeg">
+
+
+ 
+</div>
+
+
+{% endblock %}
+{% block air%}
+{% endblock %}
+{%block hr %} 
+{%endblock %}
+{% block file %} 
+{% endblock %}

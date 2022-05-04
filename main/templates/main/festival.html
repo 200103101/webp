@@ -1,0 +1,51 @@
+{% extends "main/base.html" %}
+ 
+
+<body>{% block title %} Kazah festival {% endblock %}
+  
+{% block boutn %}
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/home" class="nav-link " >Home</a></li>
+                <li class="nav-item"><a href="/carla" class="nav-link">Generalize</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">Food</a></li>
+                <li class="nav-item"><a href="/last" class="nav-link">Sport</a></li>
+                <li class="nav-item"><a href="/festival" class="nav-link active"  aria-current="page">festival</a></li>
+                <li class="nav-item"><a href="/Art" class="nav-link">Art</a></li>
+                <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">opinion</a></li>
+                <li class="nav-item"><a href="/end" class="nav-link">ending</a></li>
+              </ul>
+{%endblock%}
+{% block topic %}
+<h1 style="text-align: center; color: #00a2ff;" >
+    Festival</h1>
+{% endblock %}
+{% block mac %} 
+<link type="text/css" rel="stylesheet" href="/static/css/festival.css">
+<div class="main">
+  <p style="text-align: center;"><strong><i>Nauryz</i></strong></p>
+ <p><img src="/static/images/kozhe.jpeg"   >is a traditional kazakh festival, officially started on March 21, in the Kazakh language, "Naulus" means out of the old year and in the New Year. The equal length of day and night on this day coincides with the "vernal equinox" in the Chinese lunar calendar, thus symbolizing the return of spring and the rebirth of life and the beginning of the New Year. UNESCO, with the support of 24 countries, listed the Festival as an intangible cultural Heritage in 2009.</p>
+ <p>According to Kazakh custom, people clean up around the spring during The Festival of Naurus, cleaning up leaves and other garbage, known as "opening the spring." People pay debts, bridge Bridges and get along with those around them before the festival. Kazakhs believe that if Naulus enters the home, all diseases, misfortunes and disasters will be away, and the festival will bring a year of prosperity and good fortune to the whole family</p>
+ <p><img src="/static/images/dance.jpeg"  >When the festival comes, people wear bright traditional national costumes and flock to their homes and villages to pay New Year's greetings. From the elderly to the children will be open, tolerant, optimistic and confident. People bless each other, family and friends drink naulus porridge and sing Naulus songs, which are mostly words of blessing.</p>
+ <p><img src="/static/images/kokpar.jpeg" s >Holiday, people will organize a variety of entertainment activities and has the national characteristics of all kinds of performances and game, such as playing kazak ethnic Musical Instruments dobro, kazak type wrestling, sponsor kazak traditional game diao sheep right now, hold on the swings, high-wire, hold tug-of-war game, guessing riddles, etc. The most attractive event is the dongbula playing and singing competition held by musicians.</p>
+ <p>The main food of the Festival is Naulus porridge, These ingredients symbolize happiness, success, wisdom, health, wealth, growth and providence. Naurus porridge is a manifestation of ancient wisdom, and the numbers 7 and 9 are considered lucky by kazakhs. Festival food also horse fat sausage, horse neck, horse ribs enema, horse meat enema, horse pelvis meat package. On the day of Navulus, sheep's heads are offered to the old. When the old man receives the sheep's head, he should recite a blessing, wishing his family peace and the livestock a full circle.</p>
+<p>which contains at least seven ingredients including :</p>
+  <ol>
+    <li>rice</li>
+    <li>millet</li>
+    <li>wheat</li>
+    <li>flour</li> 
+    <li>cheese</li>
+    <li>salt</li>
+    <li>meat</li></ol>
+    <div style="background-color:rgb(40, 170, 245);text-align:center;padding:10px;margin-top:7px;">Traditions</div>
+
+</div>
+
+
+{% endblock %}
+{% block air%}
+{% endblock %}
+{%block hr %} 
+{%endblock %}
+{% block file %} 
+{% endblock %}</body>

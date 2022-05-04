@@ -1,0 +1,23 @@
+{% extends "main/base.html" %}
+{% block title %} Generalize {% endblock %}
+{% block topic %}
+<h1 style="text-align: center; color: hsla(202, 100%, 50%, 0.699);" >Generalize</h1>
+{% endblock %}
+{% block boutn %}
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/carla" class="nav-link active" aria-current="page">Generalize</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">Food</a></li>
+                <li class="nav-item"><a href="/last" class="nav-link">Sport</a></li>
+                <li class="nav-item"><a href="/festival" class="nav-link">festival</a></li>
+                <li class="nav-item"><a href="/Art" class="nav-link">Art</a></li>
+                <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">opinion</a></li>
+                <li class="nav-item"><a href="/end" class="nav-link">ending</a></li>
+              </ul>
+{% endblock %}
+{%block hr %} 
+{{ sports }}
+{% endblock %}
+{% block air %} 
+
+{% endblock %}

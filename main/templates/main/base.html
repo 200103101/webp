@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                <span class="fs-4" >Kazahsta</span>
+              </a>
+        {% block boutn %}
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="{% url 'carla' %}" class="nav-link">Generalize</a></li>
+                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">Food</a></li>
+                <li class="nav-item"><a href="{% url 'last' %}" class="nav-link">Sport</a></li>
+                <li class="nav-item"><a href="{% url 'festival' %}" class="nav-link">festival</a></li>
+                <li class="nav-item"><a href="{% url 'Art' %}" class="nav-link">Art</a></li>
+                <li class="nav-item"><a href="{% url 'index' %}}" class="nav-link">opinion</a></li>
+                <li class="nav-item"><a href="{% url 'end' %}" class="nav-link">ending</a></li>
+              </ul>
+        {% endblock %}
+            </header>
+          </div>
+          {% block topic %}
+          <h1 style="text-align: center; color: #00a2ff;" >Welcometo Kazahstan</h1>
+          {% endblock %}
+          {% block mac %}
+          {% endblock %}
+          {% block air%}
+          <div class="row" style="margin-left:100px; margin-right:60px">
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="static/images/flag.jpeg" role="png" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <h2>Generalize</h2>
+              <p>Kazakhstan, a Central Asian country and former Soviet republic.</p>
+              <p><a class="btn btn-secondary" href="carla">View details </a></p>
+            </div>
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/static/images/food.png" role="png" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        
+              <h2>Food</h2>
+              <p>Kazakh cuisine focused on mutton and horse meat,well as various milk products.</p>
+              <p><a class="btn btn-secondary" href="about">View details </a></p>
+            </div>
+            <div class="col-lg-4" >
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/static/images/sport.jpeg" role="png" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        
+              <h2>Sport</h2>
+              <p>
+                Strive to develop sports, and train our people to be healthy and happy people.</p>
+              <p><a class="btn btn-secondary" href="last">View details </a></p>
+            </div>
+            <div class="col-lg-4" >
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/static/images/Festival.jpeg" role="png" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        
+              <h2>Festival</h2>
+              <p>
+                
+Image result for Festival
+A festival is an event ordinarily celebrated by a community and centering on some characteristic aspect of that community and its religion or cultures.</p>
+              <p><a class="btn btn-secondary" href="festival">View details </a></p>
+            </div>
+            <div class="col-lg-4" >
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/static/images/art.jpeg" role="png" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        
+              <h2>Art</h2>
+              <p>
+                The art of Kazakhstan covers all forms of art created throughout history by the peoples living on the territory of modern-day Kazakhstan. </p>
+              <p><a class="btn btn-secondary" href="Art">View details </a></p>
+            </div>
+            <div class="col-lg-4" >
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/static/images/opinion.png" role="png" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+              <h2>Opinion</h2>
+              <p>
+                Can you write down your opinion, judgment or evaluation of the site on this page, let us know what we need to correct, we will read your evaluation carefully.</p>
+              <p><a class="btn btn-secondary" href="page">View details </a></p>
+            </div>
+          </div>
+          {% endblock %}
+          
+          {%block hr %} 
+          <hr class="featurette-divider">
+
+    <div class="row featurette" style="margin-left: 50px;">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Kokpar </span></h2>
+        <p class="lead"> Kokpar is an ancient equestrian sport in which horse-mounted players attempt to advance a headless goat carcass towards the opposing team's goal. The national game is known as kokpar in Kazakhstan, buzkashi in Afghanistan, Tajikistan and the U.S., kokboru and ulaq tartysh in Kyrgyzstan and kupkari in Uzbekistan</p>
+      </div>
+      <div class="col-md-3">
+        
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider" >
+
+    <div class="row featurette" style="margin-left: 50px;">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Asyk</h2>
+        <p class="lead">Asyk atu is a popular Kazakh national game which means to beat out with one's own asyk (a bone of a knee sheep joint) or several asyks at a certain distance, which then become the property of a player. Since 2017 it has been part of UNESCO's Representative List of the Intangible Cultural Heritage of the Humanity.</p>
+      </div>
+      <div class="col-md-3 order-md-1">
+      
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider" >
+
+    <div class="row featurette" style="margin-left: 50px;">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Tusau kesu</h2>
+        <p class="lead">
+            Image result for kazakh tradition tusau kesu
+            One of the most important rituals in Kazakh families is Tusau Kesu. This is cutting of the fetters on child's feet so that their future road in life is easy and bright. From the earliest times until today, the Kazakh people have devoted a lot of time to raising children.</p>
+      </div>
+      <div class="col-md-3">
+        
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    {%endblock %}
+    {% block file %} 
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
+        <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Country Name:</strong>
+              The Republic of Kazakhstan.
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+      
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Population:</strong>
+              18.877 million (as of January 2021). There are about 140 ethnic groups, of which the Kazakh account for about 70% and the Russian about 18%.
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"/><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+      
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Capital: </strong>
+              Nur-Sultan (нур -султан, formerly Astana, changed its name in March 2019) Has average temperatures of -19℃ to -4℃ in January and 19℃ to 26℃ in Jul
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Head of State:</strong>
+              Kassym-Jomart Tokayev (Касым-Жомарт Токаев).
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+      
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Official language:</strong>
+              Kazakh is the national language. Kazakh and Russian are the official languages.
+            </p>
+          </div>
+          <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"/><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+      
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">Currency:</strong>
+              Tengo.
+            </p>
+            </div>
+            <div class="d-flex text-muted pt-3">
+                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"/><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+          
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+                <strong class="d-block text-gray-dark">Brief:</strong>
+                Located in central Asia. It borders Russia in the north, Uzbekistan, Turkmenistan and Kyrgyzstan in the south, the Caspian Sea in the west and China in the east. The majority of residents follow the Muslim (Sunni) religion. In addition, there are eastern Orthodox, Catholic and Buddhist. The Republic of Kazakhstan proclaimed its independence on 16 December 1991.
+              </p>
+            </div>
+            <div class="d-flex text-muted pt-3">
+              <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+        
+              <p class="pb-3 mb-0 small lh-sm border-bottom">
+                <strong class="d-block text-gray-dark">Politica:</strong>
+                Political stability. On March 19, 2019, nazarbayev, the first president, announced his resignation in a televised address. On March 20, Kazakhstan's parliament held a joint session, and the former speaker of the upper house of parliament Tokayev was sworn in as the new president. On June 9th Mr Tokayev won an unscheduled presidential election.
+              </p>
+            </div>
+            <div class="d-flex text-muted pt-3">
+              <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"/><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+        
+              <p class="pb-3 mb-0 small lh-sm border-bottom">
+                <strong class="d-block text-gray-dark">Party:</strong>
+                There are six registered political parties in the Ministry of Justice: The Light of the Fatherland Party, the People's Party, the Bright Way Democratic Party, the National Social Democratic Party, the Agricultural and Rural Party, and the Integrity Party.
+              </p>
+          </div>
+        
+
+      </div>
+    
+      {% endblock %}
+      {% block sport %}
+   
+    {% endblock %}
+        </body>
+</html>
